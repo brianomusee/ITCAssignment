@@ -1,0 +1,349 @@
+/* TaskList.css */
+/* TaskList.css */
+/* ... other styles */
+/* Card-like layout for tasks */
+.task-table .p-datatable-tbody > tr { /* Target direct children <tr> */
+    border: 1px solid #eee;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background-color: #fff; /* Ensure white background for card effect */
+}
+
+.task-table .p-datatable-tbody > tr:hover { /* Target direct children <tr> */
+    background-color: #f9f9f9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure cell padding for card effect */
+.task-table .p-datatable-tbody td {
+    padding: 10px; /* Adjust as needed */
+}
+/* TaskList.css */
+/* ... other styles */
+
+/* Status Styles (with icons) */
+.status-todo {
+    /* Add any specific styling for "Todo" status */
+    color: #ffc107; /* Example: yellow color */
+    display: inline-flex;  /* Use flexbox for icon and text alignment */
+    align-items: center; /* Vertically align icon and text */
+}
+
+.status-in-progress {
+    /* Add any specific styling for "In Progress" status */
+    color: #007bff; /* Example: blue color */
+    display: inline-flex;
+    align-items: center;
+}
+
+.status-done {
+    /* Add any specific styling for "Done" status */
+    color: #28a745; /* Example: green color */
+    display: inline-flex;
+    align-items: center;
+}
+
+/* TaskList.css */
+/* ... other styles */
+
+/* Priority Styles (with icons) */
+.priority-high {
+    color: #dc3545; /* Red */
+    display: inline-flex;
+    align-items: center;
+    font-weight: bold; /* Make High priority stand out */
+}
+
+.priority-medium {
+    color: #ffc107; /* Amber/Yellow */
+    display: inline-flex;
+    align-items: center;
+}
+
+.priority-low {
+    color: #28a745; /* Green */
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Style the icons (optional) */
+.pi {
+    font-size: 1rem;
+}
+
+/* ... other styles */
+
+/* Optional: Style the status text itself if needed */
+.status-todo, .status-in-progress, .status-done {
+    display: inline-block;
+    width: fit-content;
+}
+
+/* Style the icons (optional) */
+.pi { /* Target all PrimeIcons */
+    font-size: 1rem; /* Adjust icon size */
+}
+
+/* ... other styles */
+
+/* Button active state */
+.p-button:active {
+    background-color: #218838 !important;
+    transform: scale(0.95);
+}
+
+/* Example smooth transition for Dialog (adapt as needed) */
+.p-dialog {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.task-list-container {
+    display: flex; /* Use flexbox for overall layout */
+    flex-direction: column; /* Stack navbar on top of content */
+    min-height: 100vh; /* Ensure container takes full viewport height */
+    font-family: 'Arial', sans-serif; /* Example font */
+    background: linear-gradient(to bottom, #e0f2f7, #ffffff); /* Subtle gradient background */
+}
+
+.navbar {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; /* Sticky navbar */
+    top: 0; /* Stick to the top */
+    z-index: 100; /* Ensure navbar is above other content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.navbar-content {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    font-size: 1.8rem; /* Slightly larger logo */
+    font-weight: bold;
+    margin-right: 20px;
+    color: #66cdaa; /* Teal color for logo */
+}
+
+.main-content { /* Style the main content area */
+    padding: 20px;
+    flex: 1; /* Allow content to expand to fill available space */
+    overflow-y: auto; /* Add scroll if content overflows */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    color: #333; /* Darker heading color */
+}
+
+.add-button {
+    background-color: #28a745 !important;
+    border-color: #28a745 !important;
+}
+
+.table-container {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* More pronounced shadow */
+    border-radius: 10px; /* More rounded corners */
+    overflow: hidden;
+    background-color: #fff; /* White background for table */
+    margin-bottom: 20px; /* Space below table */
+}
+
+.task-table .p-datatable-header {
+    background-color: #f0f0f0; /* Lighter header background */
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.task-table .p-datatable-tbody tr {
+    cursor: pointer;
+}
+
+.task-table .p-datatable-tbody tr:hover {
+    background-color: #f8f8f8;
+}
+
+.task-table .p-button-rounded {
+    margin: 0 5px;
+}
+
+/* Card-like layout for tasks */
+.task-table .p-datatable-tbody tr {
+    border: 1px solid #eee; /* Light border */
+    margin-bottom: 5px; /* Space between tasks */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transitions */
+}
+
+.task-table .p-datatable-tbody tr:hover {
+    background-color: #f9f9f9; /* Lighter hover background */
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* More prominent shadow on hover */
+}
+
+/* Button active state */
+.p-button:active {
+    background-color: #218838 !important; /* Slightly darker green */
+    transform: scale(0.95); /* Slight scale down on click */
+}
+
+/* Example smooth transition */
+.p-dialog {
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth dialog transitions */
+}
+
+.task-list-container {
+    padding: 20px;
+    font-family: sans-serif; /* Use a modern font */
+    background-color: #f8f9fa; /* Light background color */
+    min-height: 100vh; /* Ensure full viewport height */
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between; /* Align items to start and end */
+    align-items: center; /* Vertically center items */
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    color: #343a40; /* Dark heading color */
+  }
+  
+  .add-button {
+    background-color: #28a745 !important; /* Green add button */
+    border-color: #28a745 !important;
+  }
+  
+  .table-container {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to the table */
+    border-radius: 8px; /* Rounded corners for the table */
+    overflow: hidden; /* Hide overflowing content */
+  }
+  
+  .task-table .p-datatable-header {
+    background-color: #fff; /* White table header */
+    padding: 10px;
+    border-bottom: 1px solid #dee2e6; /* Add a border to the header */
+  }
+  
+  .task-table .p-datatable-tbody tr {
+    cursor: pointer; /* Make rows clickable */
+  }
+  
+  .task-table .p-datatable-tbody tr:hover {
+    background-color: #f5f5f5; /* Light hover background */
+  }
+  
+  .task-table .p-button-rounded {
+    margin: 0 5px; /* Add some space between action buttons */
+  }
+  
+  .task-dialog .p-dialog-content {
+    padding: 20px;
+  }
+  
+  .task-dialog .p-field {
+    margin-bottom: 15px;
+  }
+  
+  .task-dialog label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .delete-confirmation-dialog .p-dialog-content {
+    text-align: center; /* Center the confirmation message */
+    padding: 20px;
+  }
+  
+  .confirmation-content {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content horizontally */
+  }
+  
+  .confirmation-content span {
+    margin-left: 10px; /* Space between icon and text */
+  }
+  
+  /* Pagination Styles */
+  .p-paginator .p-paginator-pages .p-paginator-page {
+    margin: 0 5px; /* Adjust spacing between page numbers */
+  }
+  
+  .p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+    background-color: #007bff; /* Highlight current page */
+    color: white;
+    border-color: #007bff;
+  }
+  
+  .p-paginator .p-dropdown {
+    margin-left: 10px; /* Space between the dropdown and page numbers */
+  }
+
+  /* TaskList.css */
+/* ... other styles */
+
+.priority-high {
+    border: 2px dotted red; /* Red dotted border */
+    padding-bottom: 2px; /* Add some padding to avoid text touching the border */
+  }
+  
+  .priority-medium {
+    border: 2px dotted blue; /* Blue dotted border */
+      padding-bottom: 2px;
+  }
+  
+  .priority-low {
+    border: 2px dotted black; /* Black dotted border */
+      padding-bottom: 2px;
+  }
+  
+  /* Optional: Style the priority text itself if needed */
+  .priority-high, .priority-medium, .priority-low {
+      /* Add any common styles here */
+      display: inline-block; /* To make the border apply only to the text width */
+      width: fit-content; /* Ensure the border only spans the text */
+
+      padding: 7px 10px;
+      border-radius: 10px;
+      
+  }
+
+  .p-datatable .p-datatable-thead > tr > th {
+    text-align: center;
+    padding: 1rem 1rem;
+    border: 1px solid #84888c;
+    border-width: 0 0 1px 0;
+    font-weight: 600;
+    color: #495057;
+    background: #e3e5e8;
+    transition: box-shadow 0.4s;
+}
+.p-datatable .p-datatable-tbody > tr > td {
+    text-align: left;
+    border: 1px solid #99acbf;
+    border-width: 0 0 1px 0;
+    padding: 3px 5px;
+}
+
+.priority-medium {
+    border: 2px dotted blue;
+    padding: 7px 10px;
+    border-radius: 10px;
+}

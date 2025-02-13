@@ -1,0 +1,37 @@
+# Visual Studio
+.vs/
+*.user
+*.userprefs
+*.suo
+*.cache
+*.pdb
+*.dbmdl
+*.dbproj.schemaview
+*.jfm
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio Code
+.vscode/
+
+# NuGet Packages
+*.nupkg
+packages/
+
+# Rider
+.idea/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# User-specific files
+*.DS_Store
+Thumbs.db
